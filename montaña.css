@@ -1,0 +1,161 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    width: 30vh;
+    height: 10vh;
+}
+
+
+.uno{
+    background-color: red;
+    grid-area: uno;
+}
+.dos{
+    background-color: blue;
+    grid-area: dos;
+}
+.tres{
+    background-color: green;
+    grid-area: tres;
+}
+.cuatro{
+    background-color: yellow;
+    grid-area: cuatro;
+}
+.cinco{
+    background-color: orange;
+    grid-area: cinco;
+}
+.seis{
+    background-color: purple;
+    grid-area: seis;
+}
+.siete{
+    background-color: cyan;
+    grid-area: siete;
+}
+.ocho{
+    background-color: lightblue;
+    grid-area: ocho;
+}
+.nueve{
+    background-color: palegreen ;
+    grid-area: nueve;
+}
+
+@media only screen and (max-width:320px){
+
+    .contenedor{
+      display: grid;
+      grid-template-areas: "uno"
+                           "dos"
+                           "tres"
+                           ;
+    }
+    .cuatro, .cinco, .seis, .siete, .ocho, .nueve{
+        display: none;
+    }
+  
+  }
+
+@media only screen and (max-width:768px) and (min-width:321px){
+
+    .contenedor{
+      display: grid;
+      grid-template-areas: "uno  cuatro"
+                           "dos   cinco"
+                           "tres  seis"
+                           ;
+    }
+  .siete, .ocho, .nueve{
+        display: none;
+        }
+    *{
+        margin: 5px;
+        list-style: none;
+    }
+
+    .uno{
+        background-color: purple;
+        grid-area: uno;
+    }
+    .dos{
+        background-color: orange;
+        grid-area: dos;
+    }
+    .tres{
+        background-color: yellow;
+        grid-area: tres;
+    }
+    .cuatro{
+        background-color: green;
+        grid-area: cuatro;
+    }
+    .cinco{
+        background-color: blue;
+        grid-area: cinco;
+    }
+    .seis{
+        background-color: red;
+        grid-area: seis;
+    }
+
+  
+  }
+
+ 
+
+@media only screen and (min-width:769px ){
+
+    .contenedor{
+     display: grid;
+      grid-template-areas: "uno  cuatro siete"
+                           "dos   cinco ocho"
+                           "tres  seis  nueve"
+                           ;
+    }
+
+    .uno{
+        background-color: palegreen;
+        grid-area: uno;
+    }
+    .dos{
+        background-color: lightblue;
+        grid-area: dos;
+    }
+    .tres{
+        background-color: cyan;
+        grid-area: tres;
+    }
+    .cuatro{
+        background-color: purple;
+        grid-area: cuatro;
+    }
+    .cinco{
+        background-color: green;
+        grid-area: cinco;
+    }
+    .seis{
+        background-color: yellow;
+        grid-area: seis;
+    }
+    .siete{
+        background-color: gray;
+        grid-area: siete;
+    }
+    .ocho{
+        background-color: blue;
+        grid-area: ocho;
+    }
+    .nueve{
+        background-color: red ;
+        grid-area: nueve;
+    }
+
+    *{
+        margin: 5px;
+        list-style: none;
+    }
+ 
+  
+  }
